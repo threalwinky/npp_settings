@@ -1,0 +1,16 @@
+C : 
+NPP_SAVE
+CD $(CURRENT_DIRECTORY)
+gcc $(FILE_NAME) -o $(NAME_PART).exe
+cmd.exe /c start cmd /k $(NAME_PART).exe
+
+C++ : 
+NPP_SAVE
+CD $(CURRENT_DIRECTORY)
+g++ $(FILE_NAME) -o $(NAME_PART).exe
+cmd.exe /c start cmd /k $(NAME_PART).exe
+
+Python :
+NPP_SAVE
+CD $(CURRENT_DIRECTORY)
+cmd.exe /c start cmd /k python $(NAME_PART).py
